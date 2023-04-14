@@ -14,7 +14,7 @@ public class FlowEx25 {
         while(num>0){
             sum = sum+(num%10);
             num = num/10;
-            System.out.printf("입력한 num의값은 %s, 나머지는 %d",num,sum);
+            System.out.printf("num의값은 %s, 나머지는 %d",num,sum);
             System.out.println("");
 }
         System.out.println("각 자리의 수의 합 : " +sum);

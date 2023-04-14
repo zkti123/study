@@ -10,8 +10,6 @@ public class FlowEx28 {
         answer = (int)(Math.random() * 100)+1;
         System.out.println(answer);
 
-
-
         do {
             System.out.print("1~100사이의 정수를 입력 : ");
             input = sc.nextInt();
