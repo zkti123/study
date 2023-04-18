@@ -9,15 +9,19 @@ public class ArrayQuiz6 {
 //        int[] copyArr = numArr;
         int[] copyArr = new int[numArr.length];
 
+        //deepcopy
         for (int j = 0; j < numArr.length; j++) {
             copyArr[j] = numArr[j];
 
         }
         numArr[0] = 33;
+
         for (int i = 0; i < copyArr.length; i++) {
             System.out.printf("copyArr[%d] > %d\n", i, copyArr[i]);
-             System.out.printf("numArr[%d] > %d\n", i, numArr[i]);
-        }
 
+        }
+        for (int i = 0; i < copyArr.length; i++) {
+            System.out.printf("numArr[%d] > %d\n", i, numArr[i]);
+        }
     }
 }

@@ -3,7 +3,7 @@ package com.green.java.ch05;
 public class ArrayStudy4 {
     public static void main(String[] args) {
         int[] numArr = new int[]{10, 20, 30, 40, 50};
-        //int[] copyArr =  numArr;
+        //int[] copyArr =  numArr;  얉은 카피
         int[] copyArr = new int[numArr.length];
         for (int j = 0; j < numArr.length; j++) {
             copyArr[j] = numArr[j];

@@ -13,14 +13,16 @@ public class ArrayQuiz12 {
         int[] numArr = {11, 14, 2, 7, 36, 35};
         int a = 0;
         int temp =0;
+
         for (int i = 0; i < numArr.length; i++) {
-      temp = (int)(Math.random()*numArr.length);
-      a=numArr[temp];
-      numArr[temp] = numArr[i];
-      numArr[i] = a;
+
+            temp = (int)(Math.random()*numArr.length);
+
+            a=numArr[temp];
+            numArr[temp] = numArr[i];
+            numArr[i] = a;
 
         }
-
             System.out.println(Arrays.toString(numArr));
         }
     }

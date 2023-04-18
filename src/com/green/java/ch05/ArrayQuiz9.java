@@ -11,16 +11,14 @@ public class ArrayQuiz9 {
 
     public static void main(String[] args) {
         int[] numArr = {11,14,2,7,36,35};
-        int[] blank = new int[numArr.length];
-
+        int[] blank = new int[numArr.length];//6
+        int temp = 0;
         //numArr = new int[numArr.length];
+            temp= numArr[0]; // 11->0 temp = 11
+            numArr[0]=numArr[1]; // blank[1] = 14 -> blank[0] =14
+            numArr[1]=temp;
 
-        for(int i=0; i < numArr.length; i++){
-            int temp =numArr[1];//14/14
 
-            numArr[0] = temp;//11//14
-            numArr[1] =  numArr[0];
-        }
 
 
 
