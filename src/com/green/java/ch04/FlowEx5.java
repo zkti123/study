@@ -4,41 +4,40 @@ import java.util.Scanner;
 
 public class FlowEx5 {
     public static void main(String[] args) {
-        int score = ' ';
+        int score = 0;
         char grade = ' ', opt = '0';
 
-        System.out.println("점수를 입력하세요 >");
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        score = Integer.parseInt(input);
+        System.out.print("점수를 입력하세요.>");
+        Scanner scan = new Scanner(System.in);
+        score = scan.nextInt();
 
 
-        if (score >= 90) {
+        if(score>=90){
             grade = 'A';
-            if (score >= 98) {
+            if(score>=98){
                 opt = '+';
-            } else if (score < 94) {
-                opt = '-';
-            }
-        }else if (score >= 80) {
-            grade = 'B';
-            if (score >= 88) {
-                opt = '+';
-            } else if (score < 84) {
-                opt = '-';
-            }
-
-        }else if (score >= 70) {
-            grade = 'C';
-            if (score >= 78) {
-                opt = '+';
-            } else if (score < 74) {
-                opt = '-';
-            }
-        } else {
-            grade = 'D';
+             }else if (score<94){
+                opt = '-';}
         }
+        else if (score>=80){
+            grade = 'B';
+            if(score>=88){
+                opt = '+';
+            }else if (score<84)
+                opt = '-';
+        }else if (score>=70){
+            grade = 'c';
+            if (score>=78){
+                opt = '+';
 
-        System.out.printf("입력한 %d의 학점은 %c%c입니다.", score, grade, opt);
+            }else if (score<74){
+                opt = '-';}
+            else{
+                grade= 'D';
+            }
+
+        }System.out.printf("%d점의 학점은 %c%c입니다.\n",score, grade,opt);
+
+        }
     }
-}                        //90점보다 크거나 같으면 "학점은 A입니다."
+

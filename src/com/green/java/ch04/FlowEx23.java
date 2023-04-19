@@ -3,10 +3,16 @@ package com.green.java.ch04;
 public class FlowEx23 {
     public static void main(String[] args) {
 
-        int i =4;
-        while(i>=0){
-            System.out.printf("%d -I can do it\n",i);
-            i--;
-        }
+     int i = 5;
+
+     while (i>0){
+         --i;
+         System.out.printf(i +"- i can do it\n" );
+
+     }
+
+
+
+
     }
 }

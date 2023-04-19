@@ -2,15 +2,20 @@ package com.green.java.ch05;
 
 public class ArrayStudy4 {
     public static void main(String[] args) {
-        int[] numArr = new int[]{10, 20, 30, 40, 50};
-        //int[] copyArr =  numArr;  얉은 카피
-        int[] copyArr = new int[numArr.length];
-        for (int j = 0; j < numArr.length; j++) {
-            copyArr[j] = numArr[j];
-            numArr[0] = 30;
-        }
+        //배열: 같은 타입의 여러값을 저장하기 위한 공간
+        //얕은복사
+        //깊은 복사
+      int[] numArr = new int[]{10,20,30,40,50};
+      int[] copyArr = numArr; //얕은 복사 : 주소값만 복사한다.
+
         for (int i = 0; i < copyArr.length; i++) {
-            System.out.printf("copyArr[%d] : %d\n", i, copyArr[i]);
+            System.out.printf("copyArr[%d] : %d\n", i , copyArr[i]);
         }
+
+
+
+
+
+
     }
 }

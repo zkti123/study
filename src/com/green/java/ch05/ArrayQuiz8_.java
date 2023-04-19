@@ -11,23 +11,23 @@ public class ArrayQuiz8_ {
         int[] numArr = {11, 14, 2, 7, 36, 35};//6
 
         for (int i = 0; i < numArr.length; i++) {
-            if(i<1){
+            if (i < 1) {
                 System.out.print("[");
             }
         }
-        for (int i = 0; i < numArr.length; i++){
-            System.out.printf("%s",numArr[i]);
-            if(numArr.length> i+1) {
+        for (int i = 0; i < numArr.length; i++) {
+            System.out.printf("%s", numArr[i]);
+            if (numArr.length > i + 1) {
                 System.out.print(", ");
             }
-        }for (int i=0; i < numArr.length; i++){
-            if(i>= numArr.length-1){
+        }
+        for (int i = 0; i < numArr.length; i++) {
+            if (i >= numArr.length - 1) {
                 System.out.println("]");
             }
         }
     }
 }
-
 
 
 //        for (int i = 0; i < copyArr.length; i++) {

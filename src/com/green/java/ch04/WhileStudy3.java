@@ -4,21 +4,29 @@ import java.util.Scanner;
 
 public class WhileStudy3 {
     public static void main(String[] args) {
-        int input, answer;
-        Scanner sc = new Scanner(System.in);
-        answer = (int)(Math.random()*100)+1;
-        System.out.print(answer);
-        while(true){
-            System.out.print("\n1~100사이의 정수를 입력: ");
-            input = sc.nextInt();
+        Scanner scan = new Scanner(System.in);
 
-            if(input == answer){break;}
-            else if(input > answer){
+        int input, answer;
+        answer = (int)(Math.random()*100)+1;
+
+
+
+        while (true){
+            System.out.print("1~100사이의 정수를 입력:");
+            input = scan.nextInt();
+
+            if(input==0){break;}
+
+            if (input>answer){
                 System.out.println("down");
-            }else if(input < answer){
+            }else if (input < answer){
                 System.out.println("up");
             }
-        }System.out.println("good!");
+        }System.out.println("good");
+
+
+
 
     }
+
 }

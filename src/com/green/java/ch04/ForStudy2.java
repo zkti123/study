@@ -1,27 +1,26 @@
 package com.green.java.ch04;
 
-import java.util.Scanner;
-
 public class ForStudy2 {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        String input = sc.nextLine();
-//        int num = Integer.parseInt(input);
-//
-//        for(int i =1; i <=5; i++){
-//            if(i<=4){
-//                System.out.print(i+",");
-//            }else {
-//                System.out.print(i);
-//            }
-//        }
-//
-        for(int i=1; i <6; i++){
-            if(i > 1){
-                System.out.print(","); //콤마부터찍고 숫자가 나오게
-            }
-            System.out.print(i);
+
+        //for( 초기화  ; 조건식  ; 증감식 ) 실행순서 : 1>2>S>3>2>s>3
+        //1,2,3,4,5
+
+
+        for (int i = 1; i<6; i++){
+            if (i <5){
+                System.out.print(i);
+            } else {
+                System.out.print("," );
             }
         }
-    }
+        System.out.println("/n---------------");
 
+        for (int i = 1; i<6; i++){
+            if (i>1){
+                System.out.print(",");
+            }
+            System.out.print(i);
+        }
+        }
+    }
