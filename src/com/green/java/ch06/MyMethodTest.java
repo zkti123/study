@@ -1,5 +1,7 @@
 package com.green.java.ch06;
 
+import java.io.PrintStream;
+
 public class MyMethodTest {
     public static void main(String[] args) {
 
@@ -10,6 +12,9 @@ public class MyMethodTest {
 
         int result = mm.sum2(10,245);
         System.out.println("result : "+result);
+
+        //PrintStream ps = System.out;
+        //ps.println("result : " +result);  sout와 같다
 
     }
 }
