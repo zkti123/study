@@ -89,6 +89,7 @@ public class classsty {
     static이 붙은 변수는 '클래스 변수'.
     멤버 필드를 사용하지 않을때 만  static 붙일수 있다.
     멤버 필드가 static 일 때는 붙일 수 있다.
+    점연산자를 불러올때 앞에 대문자면 static 인걸 알수있다.
 
     자주 쓰는 이유 : 객체화를 따로 안해도된다. 스피드가 빠르다.
 
@@ -99,8 +100,8 @@ public class classsty {
     클래스 내의 멤버에 대해서 네 가지의 접근 권한: 인스턴스 변수, 생성자 또는 메소드,
     class 앞에 붙임.
     private : 같은 클래스 내에서만 접근이 가능함.
-    protected : 상속과 관계가 있다.
-    (default) : 패키지와 관계가 있다.
+    protected : 상속과 관계가 있다. 같은 패키지 안에서 사용 가능.
+    (default) : 패키지와 관계가 있다. 같은 패키지 안에서 사용 할 수 있다.
     public :  어디서나 접근이 가능하다.
 
     캡슈화(encapsulation): 인스턴스 변수에 private 접근 제어를 하는 것은 인스턴스 변수를
