@@ -1,7 +1,7 @@
 package com.green.java.ch07.cards;
 
 public class Card {
-    static final String[]   KINDS = {"CLOVER","HEART","DIAMOND","SPADE"};
+    static final String[] KINDS = {"CLOVER","HEART","DIAMOND","SPADE"};
     static final int NUM_MAX = 13; //무니별 카드수.
 
     String kind;//무늬
@@ -12,6 +12,12 @@ public class Card {
         this.kind = kind;
         this.num = num;
 }
+
+@Override
+    public String toString(){
+        return "kind:" + kind+",num:"+num;
+}
+
 
 
 }
