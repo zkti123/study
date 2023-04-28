@@ -13,7 +13,10 @@ public class OpreatorEx18 {
         System.out.println(Math.round(315.4)); //315
         System.out.println(Math.round(315.5)); //316 반올림
         System.out.println(Math.ceil(315.1)); //316.0 올림
+        //페이징 처리 할 때 쓴다. EX)게시판 페이지 수를 낼 때.
         System.out.println(Math.floor(315.9)); //315.0 내림
+
+
 
 
 

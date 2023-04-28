@@ -10,7 +10,7 @@ public class PrintfEx1 {
         System.out.printf("b=%d\n", b);
         System.out.printf("s=%d%n", s);
         System.out.printf("c=%c, %d %n", c, (int)c);
-        System.out.printf("finger=[%5d] \n", finger);
+        System.out.printf("finger=[%5d] \n", finger);//  \ => 이스케이프 문자 개행문자
         System.out.printf("finger=[%-5d] \n", finger);
         System.out.printf("finger=[%05d] \n", finger);
     }

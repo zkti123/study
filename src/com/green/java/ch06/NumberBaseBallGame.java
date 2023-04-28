@@ -39,9 +39,9 @@ public class NumberBaseBallGame {
 
 
         int count = 0;
+        int[] myArr = new int[NUMBER_COUNT];
         while (true) {
             ++count;
-            int[] myArr = new int[NUMBER_COUNT];
             for (int i = 0; i < NUMBER_COUNT; i++) {
                 System.out.printf("%d번숫자 입력",i+1);
                 myArr[i] = scan.nextInt();

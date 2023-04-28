@@ -12,7 +12,7 @@ public class ParamsTest {
         System.out.println(nb.num);
     }
     static void changeNum(int num){
-        num =20;
+        num = 20;
     }
     static void changeNum2(NumberBox nb2){
         nb2.num = 20;

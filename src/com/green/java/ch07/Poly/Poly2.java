@@ -8,7 +8,7 @@ public class Poly2 {
         System.out.println("r1 : "+ r1);
         Bulldog bd1 = (Bulldog)ani1;
 
-        System.out.println("r2 : " + (ani1 instanceof Cat));
+        System.out.println("r2 : " + (ani1 instanceof Cat)); //형변환은 위아래 상속관계만 가능
         //Cat c1 = (Cat)ani1;
     }
 }

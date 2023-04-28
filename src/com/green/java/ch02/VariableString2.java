@@ -13,6 +13,6 @@ public class VariableString2 {
         System.out.println("s3 : " + s3);
         System.out.println("s4 : " + s4);
         System.out.println("s3==s4: "+ (s3 == s4));
-        System.out.println("s3.equals(s4): "+ s3.equals(s3));
+        System.out.println("s3.equals(s4): "+ s3.equals(s4));
     }
 }

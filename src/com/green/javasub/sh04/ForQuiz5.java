@@ -2,19 +2,39 @@ package com.green.javasub.sh04;
 
 public class ForQuiz5 {
     public static void main(String[] args) {
-            printGugudan(5);
+
+
+        System.out.println();
+
+        int sDan = 2, eDan = 8;
+        printGugudan(sDan, eDan);
+
+
     }
-    static void printGugudan(int dan) {
+    static void printGugudan(int sDan, int eDan) {
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = sDan; i <= eDan; i++) {
+            for (int j = 1; j <=9 ; j++) {
 
-            System.out.printf("%d X %d = %d\n",dan,i, (dan*i));
+                System.out.printf("%d X %d = %d\n",i, j,(i*j) );
+            }
+            System.out.println();
+
+
         }
+
+
+
+
+   }
+
+}
+
+
+
 //        int sum = 0;
 //        for (int j = i; j == i; j++) {
 //            for (int k = 1; k <= 9; k++) {
 //                    sum = i*k;
 //                System.out.printf("%d X %d= %d\n",i , k, sum);
 //            }
-   }
-}

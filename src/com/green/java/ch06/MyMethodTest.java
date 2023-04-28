@@ -13,7 +13,7 @@ public class MyMethodTest {
         int result = mm.sum2(10,245);
         System.out.println("result : "+result);
 
-        //PrintStream ps = System.out;
+        //PrintStream ps = System.out; ==> PrintStream 객체 주소 값 만 담을수 있다.
         //ps.println("result : " +result);  sout와 같다
 
     }

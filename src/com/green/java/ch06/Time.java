@@ -1,11 +1,12 @@
 package com.green.java.ch06;
 
-public class Time {
-
+public class Time {//멤버필드 중에 public 쓸 수 있는 건 상수만 가능.
 
     private  int hour;
     private  int minute;
-    private  int second;
+    private  int second; //값넣는 방법 : 생성자를 이용해서 값넣는다 최초만 가능
+                        //메소드(setter)를 통해서 넣을수 있다.
+                        // 값 뺄 때는 메소드만 가능
 
     public int getHour() {
 

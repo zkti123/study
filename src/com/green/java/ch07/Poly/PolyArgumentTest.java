@@ -9,7 +9,7 @@ public class PolyArgumentTest {
         buyer.buy(com);
 
         buyer.printState();
-
+     //생성자와 메소드가 다른점 : 생성자는 리턴타입이없다 클래스명이랑 같다
     }
 }
 class Buyer{
