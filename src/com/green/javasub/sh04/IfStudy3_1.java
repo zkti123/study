@@ -19,8 +19,10 @@ public class IfStudy3_1 {
         }
         System.out.printf("%d의 나이는",age);
         if (discount>0){
-
+            System.out.printf("원금 %d에서 %d원을 제외한 ",price,discount);
         }
+            System.out.printf("미용금액 %d원입니다.",(price-discount));
+
 
 
     }
