@@ -2,7 +2,7 @@ package com.green.java.BlackJack;
 
 public class Card {
     private String pattern; //무늬
-    private String denomination; //
+    private String denomination; //점수
 
     public Card(String pattern, String denomination) {
         this.pattern = pattern;

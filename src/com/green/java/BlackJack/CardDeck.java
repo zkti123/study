@@ -9,18 +9,22 @@ public class CardDeck {
 
     private List<Card> cardList;
 
-    private CardDeck() {
+     CardDeck() {
         this.cardList = new ArrayList();
 
-
         for (String pattern : PATTERNS) {
-            for (int i = 0; i < CARD_COUNT; i++) {
+            for (int i = 1; i <= CARD_COUNT; i++) {
                 this.cardList.add(new Card(pattern, getDenomination(i)));
             }
 
         }
 
     }
+
+    public void showSize(){
+        System.out.println(cardList.size());
+    }
+
 
     private String getDenomination(int num) {
         switch (num) {
@@ -35,6 +39,13 @@ public class CardDeck {
             default:
                 return String.valueOf(num);
         }
+    }
+
+    public Card getCard() {
+        int rIdx = (int) (Math.random() * cardList.size());
+        //Card c = cardList.get(rIdx);
+       return cardList.remove(rIdx);//위 아래와 같다.
+        //return c;
     }
 }
 
