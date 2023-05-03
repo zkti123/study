@@ -16,6 +16,8 @@ public class BlackJackTest {
         int gamerscore = rule.getScore(gamer.openCards());
         int dealerscore = rule.getScore(dealer.openCards());
 
+        System.out.println("gamerscore : "+gamerscore);
+        System.out.println("dealerscore : "+dealerscore);
 
 
     }

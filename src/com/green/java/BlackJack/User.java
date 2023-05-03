@@ -11,8 +11,8 @@ public abstract class User {
         cardList = new ArrayList<>();
     }
 
-    public void receiveCard(Card c){
-        cardList.add(c);
+    public void receiveCard(Card g){
+        cardList.add(g);
 //외부에서 카드 주소값을 받게 되면 Card c 가 저장 할 수 있어야된다.
     }
 
