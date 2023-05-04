@@ -16,4 +16,12 @@ public class Card {
     public String getDenomination() {
         return denomination;
     }
+
+    @Override
+    public String toString(){
+
+        return String.format("Card{%s, %s}",this.pattern,this.denomination);
+        //String.format
+    }
+
 }

@@ -4,7 +4,8 @@ import java.util.List;
 
 public class Rule {
 
-    public int getScore(List<Card> cardList) {
+
+    public static int getScore(List<Card> cardList) {
        int sum = 0;
         for (Card c : cardList) {
             sum += getDenominationToNum(c);
@@ -13,7 +14,7 @@ public class Rule {
         return sum;
     }
 
-    private int getDenominationToNum(Card c2){
+    private static int getDenominationToNum(Card c2){
         switch (c2.getDenomination()){
             case "A" : return 1;
             case "J" :
@@ -26,4 +27,11 @@ public class Rule {
 
     }
 
+    public static void whoIsWin(Gamer gamer, Dealer dealer) {
+    int gPoint = gamer.getPointSum();
+    int dPoint = dealer.getPointSum();
+
+//    if (gPoint <= )
+
+    }
 }

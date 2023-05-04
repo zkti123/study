@@ -8,9 +8,9 @@ public class MyArrayList {
         return items.length;
     }
 
-    public int get(int idx){
+    public int get(int idx) {
 
-       return items[idx];
+        return items[idx];
     }
 
     public MyArrayList() {
@@ -43,26 +43,29 @@ public class MyArrayList {
     }
 
     public void add(int num, int as) {
-        if (num >items.length){return;}
+        if (num > items.length) {
+            return;
+        }
 
         int[] temp = new int[items.length + 1];
         temp[num] = as;
         for (int i = 0; i < items.length; i++) {
-            if (i<num){
+            if (i < num) {
                 temp[i] = items[i];
-            }else {
-                temp[i+1] = items[i];
+            } else {
+                temp[i + 1] = items[i];
             }
-        }items = temp;
+        }
+        items = temp;
 
 
-     }
+    }
 
     public void bubbleSort() {
         int tmp = 0;
 
-        for (int i = items.length - 1; i >0; i--) {
-            for (int j = 0; j < items.length - i ; j++) {
+        for (int i = items.length - 1; i > 0; i--) {
+            for (int j = 0; j < items.length - i; j++) {
                 if (items[j] > items[j + 1]) {
                     tmp = items[j];
                     items[j] = items[j + 1];
@@ -75,4 +78,16 @@ public class MyArrayList {
         System.out.println(toString());
     }
 
+
+    public boolean contains(int i) {
+        for (int j = 0; j < items.length; j++) {
+            if (i == items[j]) {
+                return true;
+            }
+        }return false;
+    }
+
+    public void set(int v, int c) {
+        this.items[v] = c;
+    }
 }

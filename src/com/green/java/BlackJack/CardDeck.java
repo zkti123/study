@@ -1,6 +1,7 @@
 package com.green.java.BlackJack;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CardDeck {
@@ -47,6 +48,8 @@ public class CardDeck {
        return cardList.remove(rIdx);//위 아래와 같다.
         //return c;
     }
+
+
 }
 
 
