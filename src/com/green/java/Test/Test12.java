@@ -9,7 +9,6 @@ public class Test12 {
 
     }
 
-
 }
 
 class Grade{
